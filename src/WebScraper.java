@@ -1,4 +1,5 @@
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
@@ -10,16 +11,22 @@ import java.util.LinkedList;
  */
 public class WebScraper {
 
-    String quickNameUrl = "https://www.name-generator.org.uk/quick/";
+    static String quickNameUrl = "https://www.name-generator.org.uk/quick/";
 
-    public void scrapeName(){
+    public static List<HtmlElement> scrapeName(){
         HtmlPage page = getHtmlPage(quickNameUrl);
 
         List<HtmlElement> items = page.getByXPath("//div[@class='name_heading']") ;
 
+        if (items.isEmpty()){
+            System.out.println("List items empty");
+            return null;
+        }
+        return items;
+
     }
 
-    public HtmlPage getHtmlPage(String url){
+    public static HtmlPage getHtmlPage(String url){
         WebClient client = new WebClient();
 
         client.getOptions().setCssEnabled(false);

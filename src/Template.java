@@ -3,6 +3,7 @@
  */
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Template {
 
@@ -11,26 +12,28 @@ public class Template {
      *
      * @return
      */
-    public String getTemplate() {
-        return null;
+    public static String getTemplate() {
+        Random rand = new Random();
+        return templates[rand.nextInt(templates.length)];
     }
 
-    public String getInteractionTemplate(){
-        return null;
+    public static String getInteractionTemplate(){
+        Random rand = new Random();
+        return characterInteractions[rand.nextInt(characterInteractions.length)];
     }
 
-    String[] templates = new String[]{
+    static String[] templates = new String[]{
             "CHARACTER TRAVEL LOCATION",
-            "CHARACTER DO ACTIVITY",
-            "LOCATION IS ADJECTIVE"
+            "CHARACTER DO C-ACTIVITY",
+            "LOCATION IS C-ADJECTIVE"
     };
 
-    String[] characterInteractions = new String[]{
+    static String[] characterInteractions = new String[]{
             "CHARACTER SPOKE TO CHARACTER2",
-            "CHARACTER PLAYED ACTIVITY-SPORT WITH CHARACTER2",
-            "CHARACTER PLAYED ACTIVITY-GAME WITH CHARACTER2",
+            "CHARACTER PLAYED C-SPORT WITH CHARACTER2",
+            "CHARACTER PLAYED C-GAME WITH CHARACTER2",
             "CHARACTER BEAT CHARACTER2",
             "CHARACTER UPSET CHARACTER2",
-            "CHARACTER MADE CHARACTER2 EMOTION",
+            "CHARACTER MADE CHARACTER2 C-EMOTION",
     };
 }
