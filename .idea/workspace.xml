@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="951cd48b-712c-44bb-b32f-849500f9ac7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Character.class" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Character.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Story.class" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Story.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Story.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Template.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Story.java" afterPath="$PROJECT_DIR$/src/Story.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template.java" afterPath="$PROJECT_DIR$/src/Template.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,24 +40,20 @@
           <file leaf-file-name="Story.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Story.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="329">
-                  <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+                <state relative-caret-position="109">
+                  <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#661#669#0" expanded="true" />
                     <element signature="e#720#726#0" expanded="true" />
-                    <element signature="e#1710#1721#0" expanded="true" />
-                    <element signature="e#1784#1790#0" expanded="true" />
+                    <element signature="e#1997#2008#0" expanded="true" />
+                    <element signature="e#2071#2077#0" expanded="true" />
                     <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
                     <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
                     <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
                     <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
-                    <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
-                    <element signature="method#createLocation#0;class#Story#0" expanded="false" />
                     <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-                    <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
-                    <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-                    <element signature="e#9730#9738#0" expanded="true" />
+                    <element signature="e#12470#12478#0" expanded="true" />
                     <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
                     <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
                   </folding>
@@ -62,10 +61,20 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="Random.java" pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Random.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="127">
+                  <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Node.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
+                <state relative-caret-position="659">
                   <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -77,8 +86,8 @@
           <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Character.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="221">
+                  <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -105,13 +114,15 @@
           <file leaf-file-name="Template.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Template.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="32" />
+                <state relative-caret-position="200">
+                  <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="imports" expanded="true" />
                     <element signature="method#getTemplate#0;class#Template#0" expanded="false" />
+                    <element signature="method#getTravelTemplate#0;class#Template#0" expanded="false" />
                     <element signature="method#getInteractionTemplate#0;class#Template#0" expanded="false" />
+                    <element signature="method#getLocationSpecifcTemplates#0;class#Template#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -120,27 +131,35 @@
           <file leaf-file-name="Story.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Story.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="315" column="42" lean-forward="false" selection-start-line="315" selection-start-column="34" selection-end-line="315" selection-end-column="42" />
+                <state relative-caret-position="58">
+                  <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#661#669#0" expanded="true" />
                     <element signature="e#720#726#0" expanded="true" />
-                    <element signature="e#1710#1721#0" expanded="true" />
-                    <element signature="e#1784#1790#0" expanded="true" />
+                    <element signature="e#1997#2008#0" expanded="true" />
+                    <element signature="e#2071#2077#0" expanded="true" />
                     <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
                     <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
                     <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
-                    <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
                     <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
                     <element signature="method#createLocation#0;class#Story#0" expanded="false" />
                     <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-                    <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
                     <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-                    <element signature="e#9730#9738#0" expanded="true" />
+                    <element signature="e#12470#12478#0" expanded="true" />
                     <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
                     <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/LinkedList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="118">
+                  <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -164,6 +183,18 @@
       <find>generateLoca</find>
       <find>get</find>
       <find>for</find>
+      <find>getRandomStringFromList</find>
+      <find>fillTem</find>
+      <find>getHyponyms</find>
+      <find>for(</find>
+      <find>Same place</find>
+      <find>Not same place</find>
+      <find>location</find>
+      <find>character loca</find>
+      <find>runSt</find>
+      <find>getRandomCharacter</find>
+      <find>system.out</find>
+      <find>run stor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,9 +211,9 @@
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Location.java" />
-        <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/WebScraper.java" />
+        <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Template.java" />
         <option value="$PROJECT_DIR$/src/Story.java" />
       </list>
@@ -660,7 +691,7 @@
       <workItem from="1554906696675" duration="3024000" />
       <workItem from="1555412650448" duration="2252000" />
       <workItem from="1555415452274" duration="10109000" />
-      <workItem from="1555935013181" duration="9116000" />
+      <workItem from="1555935013181" duration="19616000" />
     </task>
     <task id="LOCAL-00001" summary="Added additonal nodes&#10;Added jwi library&#10;Probably need to add HTMLUNIT on whatever local, look into">
       <created>1555427235835</created>
@@ -680,14 +711,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24501000" />
+    <option name="totallyTimeSpent" value="35001000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -695,14 +735,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -714,7 +755,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -730,7 +770,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -757,18 +797,14 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#661#669#0" expanded="true" />
             <element signature="e#720#726#0" expanded="true" />
-            <element signature="e#1710#1721#0" expanded="true" />
-            <element signature="e#1784#1790#0" expanded="true" />
+            <element signature="e#1997#2008#0" expanded="true" />
+            <element signature="e#2071#2077#0" expanded="true" />
             <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
             <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
             <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
             <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
-            <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
-            <element signature="method#createLocation#0;class#Story#0" expanded="false" />
             <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-            <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
-            <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-            <element signature="e#9730#9738#0" expanded="true" />
+            <element signature="e#12470#12478#0" expanded="true" />
             <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
             <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
           </folding>
@@ -813,7 +849,9 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#getTemplate#0;class#Template#0" expanded="false" />
+            <element signature="method#getTravelTemplate#0;class#Template#0" expanded="false" />
             <element signature="method#getInteractionTemplate#0;class#Template#0" expanded="false" />
+            <element signature="method#getLocationSpecifcTemplates#0;class#Template#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,18 +884,14 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#661#669#0" expanded="true" />
             <element signature="e#720#726#0" expanded="true" />
-            <element signature="e#1710#1721#0" expanded="true" />
-            <element signature="e#1784#1790#0" expanded="true" />
+            <element signature="e#1997#2008#0" expanded="true" />
+            <element signature="e#2071#2077#0" expanded="true" />
             <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
             <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
             <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
             <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
-            <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
-            <element signature="method#createLocation#0;class#Story#0" expanded="false" />
             <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-            <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
-            <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-            <element signature="e#9730#9738#0" expanded="true" />
+            <element signature="e#12470#12478#0" expanded="true" />
             <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
             <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
           </folding>
@@ -915,18 +949,14 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#661#669#0" expanded="true" />
             <element signature="e#720#726#0" expanded="true" />
-            <element signature="e#1710#1721#0" expanded="true" />
-            <element signature="e#1784#1790#0" expanded="true" />
+            <element signature="e#1997#2008#0" expanded="true" />
+            <element signature="e#2071#2077#0" expanded="true" />
             <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
             <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
             <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
             <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
-            <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
-            <element signature="method#createLocation#0;class#Story#0" expanded="false" />
             <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-            <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
-            <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-            <element signature="e#9730#9738#0" expanded="true" />
+            <element signature="e#12470#12478#0" expanded="true" />
             <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
             <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
           </folding>
@@ -998,26 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebScraper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1028,39 +1038,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="200">
+          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#getTemplate#0;class#Template#0" expanded="false" />
+            <element signature="method#getTravelTemplate#0;class#Template#0" expanded="false" />
             <element signature="method#getInteractionTemplate#0;class#Template#0" expanded="false" />
+            <element signature="method#getLocationSpecifcTemplates#0;class#Template#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Story.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="109">
+          <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#661#669#0" expanded="true" />
             <element signature="e#720#726#0" expanded="true" />
-            <element signature="e#1710#1721#0" expanded="true" />
-            <element signature="e#1784#1790#0" expanded="true" />
+            <element signature="e#1997#2008#0" expanded="true" />
+            <element signature="e#2071#2077#0" expanded="true" />
             <element signature="method#createCharacter#0;class#Story#0" expanded="false" />
             <element signature="docComment;method#addCharacter#0;class#Story#0" expanded="false" />
             <element signature="method#printCharacters#0;class#Story#0" expanded="false" />
             <element signature="method#getRandomCharacter#0;class#Story#0" expanded="false" />
-            <element signature="method#getRandomLocation#0;class#Story#0" expanded="false" />
-            <element signature="method#createLocation#0;class#Story#0" expanded="false" />
             <element signature="method#initDictionary#0;class#Story#0" expanded="false" />
-            <element signature="method#getSynonyms#0;class#Story#0" expanded="false" />
-            <element signature="method#getHyponyms#0;class#Story#0" expanded="false" />
-            <element signature="e#9730#9738#0" expanded="true" />
+            <element signature="e#12470#12478#0" expanded="true" />
             <element signature="method#checkListContainsWord#0;class#Story#0" expanded="false" />
             <element signature="method#compareNodes#0;class#Story#0" expanded="false" />
           </folding>

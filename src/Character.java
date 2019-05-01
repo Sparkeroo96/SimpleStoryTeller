@@ -16,4 +16,8 @@ public class Character extends Node {
     public void setCurrentLocation(Node location){
         currentLocation = location;
     }
+
+    public Node getCurrentLocation(){
+        return currentLocation;
+    }
 }

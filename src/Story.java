@@ -36,6 +36,7 @@ public class Story {
     URL url = null;
     IDictionary dict = null;
 
+    Boolean characterInteraction = false;
 
     public Story() {
         if (dict == null){
@@ -43,19 +44,26 @@ public class Story {
         }
 
         createCharacter();
-        getHyponyms("sport");
-//        printCharacters();
-//        System.out.println("Generating your story...");
-//        generateNameList();
-//        generateLocations();
-//        printNames();
+        createCharacter();
+        System.out.println("Generating your story...");
+        generateNameList();
+        generateLocations();
+
+        for (int x = 0; x < 10; x ++){
+            runStory();
+        }
+        System.out.println(story);
+
+//        for (Character character : characters){
+//            System.out.println("Character: " + character.getName() + " location " + character.getCurrentLocation());
+//        }
     }
 
     /**
      * Gets a template and runs it as a story
      */
     private void runStory(){
-        Character character = getRandomCharacter();
+        Character character = characters.get(getRandomCharacter());
 
         Random rand = new Random();
         int x = rand.nextInt();
@@ -64,15 +72,49 @@ public class Story {
         LinkedList<Character> templateCharacters = new LinkedList<Character>();
         LinkedList<Node> templateLocations = new LinkedList<Node>();
 
-        if (x == 0 && false){
+        Node characterLocation = character.getCurrentLocation();
+
+        templateCharacters.add(character);
+        if (characterLocation != null){
+            //Checking if other characters are in this location
+            System.out.println("Character location");
+            x = 0;
+            for (Character person : characters){
+                if(person.getCurrentLocation() != null) {
+                    if (characterLocation.getName().equals(person.getCurrentLocation().getName()) && person != character) {
+                        templateCharacters.add(person);
+                    } 
+                }
+                x ++;
+            }
+        }
+
+        if (templateCharacters.size() > 1 && (rand.nextInt(2) == 1 || characterInteraction == false)){
             // Two characters are in the same place, can have them interact
+            template = Template.getInteractionTemplate();
+            templateLocations.add(character.getCurrentLocation());
+            characterInteraction = true;
+        }
+        else if (characterLocation != null && rand.nextInt(5) == 1){
+            template = Template.getLocationSpecifcTemplates();
+            characterInteraction = false;
         }
         else {
             // Run a normal story template
-            template = Template.getTemplate();
-            templateCharacters.add(getRandomCharacter());
             templateLocations.add(getRandomLocation());
+            if (templateLocations.get(0) == character.getCurrentLocation()){
+                template = Template.getTemplate();
+            }
+            else{
+                template = Template.getTravelTemplate();
+            }
 
+
+            characterInteraction = false;
+        }
+
+        if (templateLocations.isEmpty()){
+            templateLocations.add(getRandomLocation());
         }
 
         fillTemplate(template, templateCharacters, templateLocations);
@@ -99,6 +141,8 @@ public class Story {
 
         String[] templateParts = template.split(" ");
 
+        Random rand = new Random();
+
         for (String part : templateParts){
             if (part.equals("CHARACTER")){
                 storyString += character1.getName();
@@ -108,18 +152,35 @@ public class Story {
             }
             else if (part.equals("LOCATION")){
                 storyString += location1.getName();
+                character1.setCurrentLocation(location1);
             }
             else if (part.equals("LOCATION2")){
                 storyString += location2.getName();
+                character2.setCurrentLocation(location2);
             }
             else if (part.contains("C-")){
-
-                String word = getRandomStringFromList(list);
-                storyString += location2.getName();
+                String changeWord = part.replace("C-", "");
+                LinkedList<String> hyponyms = getHyponyms(changeWord);
+                String word = getRandomStringFromList(hyponyms);
+                if(word == null) word = changeWord;
+                storyString += word;
+            }
+            else if (part.contains("S-")){
+                String changeWord = part.replace("S-", "");
+                LinkedList<String> synonyms = getSynonyms(changeWord);
+                String word = getRandomStringFromList(synonyms);
+                if(word == null) word = changeWord;
+                storyString += word;
+            }
+            else {
+                storyString += part;
             }
 
             storyString += " ";
         }
+//        System.out.println("Template: " + template);
+//        System.out.println("Story String: " + storyString);
+        story += storyString + "\n";
 
     }
 
@@ -154,9 +215,10 @@ public class Story {
      * Returns a random character from the pool
      * @return a character node
      */
-    private Character getRandomCharacter(){
+    private int getRandomCharacter(){
         Random rand = new Random();
-        return characters.get(rand.nextInt(characters.size()));
+//        return characters.get(rand.nextInt(characters.size()));
+        return rand.nextInt(characters.size());
     }
 
     /**
@@ -205,7 +267,7 @@ public class Story {
 
     private String getRandomStringFromList(LinkedList<String> list){
         if (list.size() == 0){
-            generateNameList();
+            return null;
         }
 
         Random rand = new Random();
@@ -218,7 +280,6 @@ public class Story {
     private void printNames(){
         int x = 0;
         for (String name : names){
-            System.out.println(x + " name: " + name);
             x ++;
         }
     }
@@ -232,7 +293,8 @@ public class Story {
         numberLocations ++;
 
         for (int x = 0; x < numberLocations; x ++){
-            createLocation();
+            Node location = createLocation();
+            locations.add(location);
         }
     }
 
@@ -248,7 +310,6 @@ public class Story {
 
         Random rand = new Random();
         name = name + " " + synonyms.get(rand.nextInt(synonyms.size()));
-        System.out.println("name: " + name + " locationType: " + locationType);
         Node locationNode = new Node(name, locationType);
         return locationNode;
     }
@@ -287,12 +348,24 @@ public class Story {
      */
     private LinkedList<String> getSynonyms(String searchWord){
         // look up first sense of the word "dog "
-
         LinkedList<String> synonyms = new LinkedList<String>();
 
-        IIndexWord idxWord = dict.getIndexWord (searchWord, POS . NOUN );
+        IIndexWord idxWord = dict.getIndexWord(searchWord, POS . NOUN );
 
-        for (int x = 0; x < idxWord.getWordIDs().size(); x ++) {
+
+        int wordIdsSize;
+        try{
+            wordIdsSize = idxWord.getWordIDs().size();
+        }
+        catch (Exception e){
+            System.out.println("Exception " + e);
+            synonyms.add(searchWord);
+            return synonyms;
+
+        }
+
+
+        for (int x = 0; x < wordIdsSize; x ++) {
             IWordID wordID = idxWord.getWordIDs().get(x); // 1st meaning
             IWord word = dict.getWord(wordID);
             ISynset synset = word.getSynset();
@@ -329,7 +402,7 @@ public class Story {
 
         for(ISynsetID sid : hypernyms) {
             words = dict . getSynset ( sid ) . getWords () ;
-            System . out . print ( sid + " {") ;
+//            System . out . print ( sid + " {") ;
             for(Iterator<IWord> i = words.iterator(); i . hasNext () ;) {
                 String newWord = i.next().getLemma();
                 if (checkListContainsWord(returnList, newWord) == false){
