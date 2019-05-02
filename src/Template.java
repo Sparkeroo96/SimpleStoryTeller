@@ -47,16 +47,16 @@ public class Template {
             "CHARACTER played C-SPORT WITH CHARACTER2",
             "CHARACTER played C-GAME WITH CHARACTER2",
             "CHARACTER S-beat CHARACTER2",
-            "CHARACTER s-upset CHARACTER2",
+            "CHARACTER S-upset CHARACTER2",
             "CHARACTER S-made CHARACTER2 C-EMOTION",
     };
 
     static String[] locationSpecifcTemplates = new String[]{
             "CHARACTER S-ENJOYED LOCATION",
             "CHARACTER DID NOT S-ENJOY LOCATION",
-            "CHARCTER thinks LOCATION IS S-FUN",
-            "CHARCTER thinks LOCATION IS S-RUBBISH",
-            "CHARCTER thinks LOCATION IS S-EXCITING",
+            "CHARACTER thinks LOCATION IS S-FUN",
+            "CHARACTER thinks LOCATION IS S-RUBBISH",
+            "CHARACTER thinks LOCATION IS S-EXCITING",
             "CHARACTER will go back to LOCATION",
             "CHARACTER will not go back to LOCATION"
     };

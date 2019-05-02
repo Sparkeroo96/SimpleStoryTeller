@@ -89,7 +89,7 @@ public class Story {
             }
         }
 
-        if (templateCharacters.size() > 1 && (rand.nextInt(2) == 1 || characterInteraction == false)){
+        if (templateCharacters.size() > 1 && (rand.nextInt(2) == 3 || characterInteraction == false)){
             // Two characters are in the same place, can have them interact
             template = Template.getInteractionTemplate();
             templateLocations.add(character.getCurrentLocation());
