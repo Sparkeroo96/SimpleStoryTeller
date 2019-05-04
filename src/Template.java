@@ -7,28 +7,28 @@ import java.util.Random;
 
 public class Template {
 
+    private static Random rand = new Random();
     /**
      * Function gets a template
-     *
      * @return
      */
     public static String getTemplate() {
-        Random rand = new Random();
+//        Random rand = new Random();
         return templates[rand.nextInt(templates.length)];
     }
 
     public static String getTravelTemplate() {
-        Random rand = new Random();
+//        Random rand = new Random();
         return travelTemplates[rand.nextInt(travelTemplates.length)];
     }
 
     public static String getInteractionTemplate(){
-        Random rand = new Random();
+//        Random rand = new Random();
         return characterInteractions[rand.nextInt(characterInteractions.length)];
     }
 
     public static String getLocationSpecifcTemplates(){
-        Random rand = new Random();
+//        Random rand = new Random();
         return locationSpecifcTemplates[rand.nextInt(locationSpecifcTemplates.length)];
     }
 

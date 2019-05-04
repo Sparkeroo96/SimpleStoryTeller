@@ -32,6 +32,7 @@ public class Story {
     String wnhome = System.getenv("WNHOME");
     //THIS NEEDS TO BE CHANGED TO YOUR INSTALLATION OF WORDNET
     String path = "C:\\Program Files (x86)\\WordNet\\2.1\\dict";
+    private Random rand = new Random();
 
     URL url = null;
     IDictionary dict = null;
@@ -65,7 +66,7 @@ public class Story {
     private void runStory(){
         Character character = characters.get(getRandomCharacter());
 
-        Random rand = new Random();
+//        Random rand = new Random();
         int x = rand.nextInt();
 
         String template;
@@ -140,7 +141,7 @@ public class Story {
 
         String[] templateParts = template.split(" ");
 
-        Random rand = new Random();
+//        Random rand = new Random();
 
         for (String part : templateParts){
             if (part.equals("CHARACTER")){
@@ -215,7 +216,7 @@ public class Story {
      * @return a character node
      */
     private int getRandomCharacter(){
-        Random rand = new Random();
+//        Random rand = new Random();
 //        return characters.get(rand.nextInt(characters.size()));
         return rand.nextInt(characters.size());
     }
@@ -225,7 +226,7 @@ public class Story {
      * @return a location node
      */
     private Node getRandomLocation(){
-        Random rand = new Random();
+//        Random rand = new Random();
         return locations.get(rand.nextInt(locations.size()));
     }
 
@@ -269,7 +270,7 @@ public class Story {
             return null;
         }
 
-        Random rand = new Random();
+//        Random rand = new Random();
         int pos = rand.nextInt(list.size());
 
         String returnString = list.remove(pos);
@@ -287,7 +288,7 @@ public class Story {
      * Generate a number of locations for characters
      */
     private void generateLocations(){
-        Random rand = new Random();
+//        Random rand = new Random();
         int numberLocations = rand.nextInt(3);
         numberLocations ++;
 
@@ -307,7 +308,7 @@ public class Story {
 
         LinkedList<String> synonyms = getSynonyms(locationType);
 
-        Random rand = new Random();
+//        Random rand = new Random();
         name = name + " " + synonyms.get(rand.nextInt(synonyms.size()));
         Node locationNode = new Node(name, locationType);
         return locationNode;

@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 /**
  * Created by Sam on 16/04/2019.
+ * Allows you to scrape web pages
  */
 public class WebScraper {
 

@@ -1,5 +1,6 @@
 /**
  * Created by Sam on 16/04/2019.
+ * Class has all the character data
  */
 
 import java.util.LinkedList;
