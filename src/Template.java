@@ -43,20 +43,20 @@ public class Template {
     };
 
     static String[] characterInteractions = new String[]{
-            "CHARACTER S-spoke TO CHARACTER2",
+            "CHARACTER S-spoke to CHARACTER2",
             "CHARACTER played C-SPORT WITH CHARACTER2",
             "CHARACTER played C-GAME WITH CHARACTER2",
             "CHARACTER S-beat CHARACTER2",
             "CHARACTER S-upset CHARACTER2",
-            "CHARACTER S-made CHARACTER2 C-EMOTION",
+            "CHARACTER S-made CHARACTER2 C-emotion",
     };
 
     static String[] locationSpecifcTemplates = new String[]{
-            "CHARACTER S-ENJOYED LOCATION",
-            "CHARACTER DID NOT S-ENJOY LOCATION",
-            "CHARACTER thinks LOCATION IS S-FUN",
-            "CHARACTER thinks LOCATION IS S-RUBBISH",
-            "CHARACTER thinks LOCATION IS S-EXCITING",
+            "CHARACTER S-enjoyed LOCATION",
+            "CHARACTER did not S-like LOCATION",
+            "CHARACTER thinks LOCATION IS S-fun",
+            "CHARACTER thinks LOCATION IS S-rubbish",
+            "CHARACTER thinks LOCATION IS S-exciting",
             "CHARACTER will go back to LOCATION",
             "CHARACTER will not go back to LOCATION"
     };

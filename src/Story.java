@@ -23,7 +23,7 @@ public class Story {
     LinkedList<Character> characters = new LinkedList<Character>();
     LinkedList<String> names = new LinkedList<String>();
     LinkedList<Node> locations = new LinkedList<Node>();
-    String story;
+    String story = "";
 
 
     Scanner reader = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class Story {
         for (int x = 0; x < 10; x ++){
             runStory();
         }
-        System.out.println(story);
+        System.out.println("\n" + story);
 
 //        for (Character character : characters){
 //            System.out.println("Character: " + character.getName() + " location " + character.getCurrentLocation());
@@ -77,7 +77,6 @@ public class Story {
         templateCharacters.add(character);
         if (characterLocation != null){
             //Checking if other characters are in this location
-            System.out.println("Character location");
             x = 0;
             for (Character person : characters){
                 if(person.getCurrentLocation() != null) {

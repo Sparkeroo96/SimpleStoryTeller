@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="951cd48b-712c-44bb-b32f-849500f9ac7c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleStoryTeller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleStoryTeller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Story.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/Story.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/CachingDictionary$ItemCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/CachingDictionary$ItemCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/RAMDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/RAMDictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/FileProvider$JWIBackgroundLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/FileProvider$JWIBackgroundLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/FileProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/FileProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/WordnetFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/data/WordnetFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/item/WordID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleStoryTeller/edu/mit/jwi/item/WordID.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Story.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Story.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template.java" afterDir="false" />
     </list>
@@ -49,19 +38,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Story.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+                <state relative-caret-position="1089">
+                  <caret line="216" column="16" selection-start-line="216" selection-start-column="16" selection-end-line="216" selection-end-column="16" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="imports" expanded="true" />
-                    <element signature="e#661#669#0" expanded="true" />
                     <element signature="method#createCharacter#0;class#Story#0" />
                     <element signature="docComment;method#addCharacter#0;class#Story#0" />
                     <element signature="method#printCharacters#0;class#Story#0" />
-                    <element signature="method#getRandomCharacter#0;class#Story#0" />
                     <element signature="method#initDictionary#0;class#Story#0" />
-                    <element signature="e#10785#10793#0" expanded="true" />
-                    <element signature="e#12470#12478#0" expanded="true" />
                     <element signature="method#checkListContainsWord#0;class#Story#0" />
                     <element signature="method#compareNodes#0;class#Story#0" />
                   </folding>
@@ -96,8 +81,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/WebScraper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-223">
-                  <caret column="36" selection-start-column="36" selection-end-column="36" />
+                <state relative-caret-position="425">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -109,8 +97,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Template.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="51" selection-end-column="6" />
+                <state relative-caret-position="413">
+                  <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="imports" expanded="true" />
@@ -126,18 +114,16 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Story.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-146">
-                  <caret line="133" selection-start-line="133" selection-end-line="133" />
+                <state relative-caret-position="2006">
+                  <caret line="132" selection-start-line="132" selection-end-line="132" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#661#669#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                     <element signature="method#createCharacter#0;class#Story#0" />
                     <element signature="docComment;method#addCharacter#0;class#Story#0" />
                     <element signature="method#printCharacters#0;class#Story#0" />
                     <element signature="method#getRandomCharacter#0;class#Story#0" />
                     <element signature="method#initDictionary#0;class#Story#0" />
-                    <element signature="e#10785#10793#0" expanded="true" />
-                    <element signature="e#12470#12478#0" expanded="true" />
                     <element signature="method#checkListContainsWord#0;class#Story#0" />
                     <element signature="method#compareNodes#0;class#Story#0" />
                   </folding>
@@ -196,10 +182,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -389,6 +375,7 @@
       <workItem from="1555415452274" duration="10109000" />
       <workItem from="1555935013181" duration="19616000" />
       <workItem from="1556806212214" duration="3180000" />
+      <workItem from="1556977605444" duration="1575000" />
     </task>
     <task id="LOCAL-00001" summary="Added additonal nodes&#10;Added jwi library&#10;Probably need to add HTMLUNIT on whatever local, look into">
       <created>1555427235835</created>
@@ -408,7 +395,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38181000" />
+    <option name="totallyTimeSpent" value="39756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,7 +407,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.17377399" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -430,11 +417,9 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="UI Designer" order="7" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,7 +428,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -454,6 +440,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,25 +527,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebScraper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Story.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        <state relative-caret-position="2006">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#661#669#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="method#createCharacter#0;class#Story#0" />
             <element signature="docComment;method#addCharacter#0;class#Story#0" />
             <element signature="method#printCharacters#0;class#Story#0" />
             <element signature="method#getRandomCharacter#0;class#Story#0" />
             <element signature="method#initDictionary#0;class#Story#0" />
-            <element signature="e#10785#10793#0" expanded="true" />
-            <element signature="e#12470#12478#0" expanded="true" />
             <element signature="method#checkListContainsWord#0;class#Story#0" />
             <element signature="method#compareNodes#0;class#Story#0" />
           </folding>
@@ -567,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="413">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
